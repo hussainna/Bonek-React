@@ -1,0 +1,34 @@
+.shops{
+    height: 170vh;
+    background-color: #f6f9fc;
+}
+.shops .container{
+    display: flex;
+}
+.brands{
+    background-color: #fff;
+    padding: 20px;
+    height: 100vh;
+}
+.brands span{
+    color: #000;
+}
+.brands .row{
+    padding: 10px;
+}
+.brands span{
+    font-size: 18px;
+}
+.brands .col{
+    padding: 15px 10px;
+    background-color: #f6f9fc;
+    margin-top: 20px;
+    transition: .4s ease;
+    cursor: pointer;
+}
+.brands .col span{
+    margin-left: 10px;
+}
+.brands .col:hover{
+    background-color: #fff;
+}

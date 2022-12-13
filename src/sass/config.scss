@@ -1,0 +1,36 @@
+$redColor:#e94560;
+$gold:gold;
+$blue:#0f3460;
+$gray:#808080;
+
+
+
+$backgroundColor:#f6f9fc;
+@mixin shadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+@mixin flex($justify-content,$align-items,$text-align){
+    display: flex;
+    justify-content: justify-content;
+    align-items: $align-items;
+    text-align: $text-align;
+}
+@mixin grid($col){
+    display: grid;
+    grid-template-columns: repeat($col,1fr);
+    grid-gap: 30px;
+}
+
+
+@mixin border-color($border,$padding,$background-color,$color){
+    border-radius: $border;
+    padding: $padding;
+    color: $color;
+    background-color:$background-color ;
+}
+
+@mixin slide($slideNumber){
+    flex: $slideNumber;
+}

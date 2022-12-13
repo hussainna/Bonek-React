@@ -1,0 +1,20 @@
+.discount{
+    height: 50vh;
+    background-color: #f6f9fc;
+
+}
+.discount .row img{
+    width: 100%;
+}
+.discount .col{
+    padding: 20px;
+    text-align: left;
+    border: 1px solid rgb(243, 243, 243);
+    border-radius: 10px;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.discount .col span{
+    color: #e94560;
+}

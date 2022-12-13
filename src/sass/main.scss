@@ -1,0 +1,151 @@
+@import 'shops';
+@import 'config';
+
+h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+//mobile phones style part
+
+.shops{
+    .container{
+        padding-top: 50px;
+    }
+
+    .brands{
+        @include slide(1.1);
+        @include shadow;
+
+        .col:hover{
+            @include shadow;
+            border-radius: 10px;   
+        }
+    }
+    .mobilePhone{
+        h2{
+            margin-left: 50px;
+            margin-bottom: 10px;
+        }
+        @include slide(4);
+        .row{
+            @include grid(3);
+            margin-left: 50px;
+            .col{
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 5px;
+                @include shadow;
+
+                .brand{
+                    @include border-color(50px,5px,$redColor,#fff)
+                }
+                .price{
+                    color: $redColor;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+            }
+            .icons i{
+                color: $gold;
+            }
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
+
+
+// banner style
+.banner{
+    height: 70vh;
+    background-color: $backgroundColor;
+    .img1{
+        width: 84%;
+    }
+    .img2{
+        width: 170%;
+    }
+}
+.banner img{
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+//services styled
+
+.services{
+    height: 60vh;
+    background-color: $backgroundColor;
+
+    i{
+        color: black;
+        font-size: 25px;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        background-color: $backgroundColor;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .row{
+        @include flex(space-between,center,center);
+
+        .col{
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            @include shadow;
+            margin-left: 20px;
+
+            h3{
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 15px;
+                color: gray;
+            }
+        }
+    }
+}
+
+//Footer Styled
+
+footer{
+    background-color: $blue;
+    height: 50vh;
+    h2{
+        color: #fff;
+        margin-bottom: 30px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .logo{
+        color: $redColor;
+    }
+    .row{
+        padding-top: 40px;
+        @include grid(4);
+        p{
+            color: $gray;
+        }
+
+        li{
+            color: $gray;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+
+
+
+
+
+

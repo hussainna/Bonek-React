@@ -1,0 +1,41 @@
+.hero{
+    height: 90vh;
+    margin-top: 20px;
+}
+.hero .sidebarCategory{
+    flex: 1.1;
+}
+.hero .heroText{
+    flex:4;
+    margin-left: 70px;
+}
+.hero .sidebarCategory img{
+    width: 15%;
+    margin-right: 10px;
+}
+.hero ul li{
+    padding: 10px;
+    transition: .2s ease;
+}
+.hero ul li:hover{
+    background-color: #ffe1e6;
+}
+.hero ul{
+    border-radius: 5px;
+    padding: 5px 15px;
+    box-shadow: -1px 15px 21px 11px rgba(0,0,0,0.05);
+-webkit-box-shadow: -1px 15px 21px 11px rgba(0,0,0,0.05);
+-moz-box-shadow: -1px 15px 21px 11px rgba(0,0,0,0.05);
+}
+.hero .text{
+    text-align: left;
+    width: 50%;
+    margin-bottom: 90px;
+}
+p{
+
+    margin-bottom: 10px;
+}
+.heroText img{
+    width: 35%;
+}
