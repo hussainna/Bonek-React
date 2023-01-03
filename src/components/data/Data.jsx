@@ -19,10 +19,6 @@ export const navData=[
         path:'/vender-account',
     },
     {
-        link:'Track My Order',
-        path:'/track-my-order',
-    },
-    {
         link:'Contact',
         path:'/contact',
     },

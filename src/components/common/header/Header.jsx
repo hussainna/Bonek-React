@@ -1,9 +1,45 @@
+import axios from 'axios'
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
+import swal from 'sweetalert'
 import logo from '../../assets/images/logo.svg'
 import { navData } from '../../data/Data'
 import './header.css'
 function Header() {
+
+    const history=useHistory()
+
+    const Logout=(e)=>{
+        e.preventDefault()
+        axios.post('api/logout').then(res=>{
+            if(res.data.status===200)
+            {
+                localStorage.removeItem('auth_token')
+                localStorage.removeItem('auth_username')
+
+                swal('success',res.data.message)
+                history.push('/')
+            }
+        })
+    }
+
+    var AuthButton=''
+
+    if(!localStorage.getItem('auth_token'))
+    {
+        AuthButton=(
+            <ul className='flex'>
+            <li><Link to='/login'>Login</Link></li>
+            <li><Link to='/register'>register</Link></li>
+            </ul>
+        )
+    }
+    else{
+        AuthButton=(
+            <li><button className='logout' onClick={Logout}>Logout</button></li>
+        )
+    }
+
   return (
     <header>
         <div className="container">
@@ -33,6 +69,7 @@ function Header() {
                         <Link to={item.path}>{item.link}</Link>
                     </li>
                 ))}
+                {AuthButton}
             </ul>
 
         </nav>

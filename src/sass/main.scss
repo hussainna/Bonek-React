@@ -5,8 +5,13 @@ h3{
     font-size: 18px;
     font-weight: 500;
 }
-
-
+button{
+    cursor: pointer;
+}
+.logout{
+    background-color: white;
+    color: #000;
+}
 //mobile phones style part
 
 .shops{
@@ -143,7 +148,14 @@ footer{
 
 }
 
-
+.register{
+    form{
+        text-align: center;
+        margin-left: 300px;
+        margin-top: 40px;
+        width: 40%;
+    }
+}
 
 
 
